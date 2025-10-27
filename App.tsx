@@ -1,7 +1,6 @@
 import React, { useState, useCallback, useRef } from 'react';
 import { generateCoverImage } from './services/geminiService';
-
-declare const html2canvas: any;
+import html2canvas from 'html2canvas';
 
 const LoadingSpinner: React.FC = () => (
   <div className="flex flex-col items-center justify-center gap-4">

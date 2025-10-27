@@ -2,7 +2,7 @@
 import { GoogleGenAI, Modality } from "@google/genai";
 
 // 這個函式會在 Vercel 的伺服器上執行，而不是在用戶的瀏覽器裡
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any) {
   // 檢查請求的方法是否為 POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method Not Allowed' });
